@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo Charity Organization</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</style>
+
+
+<!-- Custom CSS for Hover Effect -->
+<style>
+    pre-nav .social-icons a {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: #144704;
+    text-decoration: none;
+}
+
+.pre-nav .social-icons a:hover {
+    color: #0d6efd;
+}
+
+
+        /* Footer Styling */
+        footer {
+            background-color: #144704;
+            color: white;
+            padding: 30px 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for box-shaped sublinks */
+        .box-link {
+            display: block;
+            padding: 10px 15px;
+            background-color: white;
+            border: 2px solid blue;
+            border-radius: 5px;
+            margin: 5px 0;
+            color: blue;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .hero-section .carousel-caption a.btn {
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+        .box-link:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        /* Align submenu items neatly */
+        .submenu-container ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .submenu-container ul li {
+            list-style: none;
+        }
+    .hover-effect:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    /* Section Styling */
+    .events-section {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .event-card {
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .event-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-card img {
+            border-radius: 15px 15px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .event-card-body {
+            padding: 20px;
+            background-color: white;
+            border-radius: 0 0 15px 15px;
+        }
+
+        .event-title {
+            font-size: 1.5rem;
+            color: #144704; /* Dark green color */
+        }
+
+        .event-description {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .btn-learn-more {
+            background-color: #0d6efd; /* Blue color */
+            color: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn-learn-more:hover {
+            background-color: #0a58ca; /* Darker blue */
+        }
+        footer {
+            background-color: #144704;
+            color: white;
+            padding: 30px 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for box-shaped sublinks */
+        .box-link {
+            display: block;
+            padding: 10px 15px;
+            background-color: white;
+            border: 2px solid blue;
+            border-radius: 5px;
+            margin: 5px 0;
+            color: blue;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pre-Nav Section -->
+<div class="pre-nav mb-2">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <a href="#" class="btn btn-success btn-sm">Event Calendar</a>
+            <a href="#" class="btn btn-success btn-sm">Donate Now</a>
+        </div>
+        <div class="social-icons d-flex">
+            <a href="#" class="mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="mx-2"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images (3).jpeg" alt="Jojo Charity Logo" class="rounded-circle" style="width: 40px; height: 40px; margin-right: 10px;">
+            Jojo Charity
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html" data-bs-toggle="collapse" data-bs-target="#aboutDropdown" aria-expanded="false" aria-controls="aboutDropdown">About Us</a>
+                    <div class="collapse submenu-container" id="aboutDropdown" data-bs-parent="#navbarNav">
+                        <ul class="list-unstyled">
+                            <li><a class="box-link" href="aboutus.html">Our Mission</a></li>
+                           
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html" data-bs-toggle="collapse" data-bs-target="#eventsDropdown" aria-expanded="false" aria-controls="eventsDropdown">Events</a>
+                    <div class="collapse submenu-container" id="eventsDropdown" data-bs-parent="#navbarNav">
+                        <ul class="list-unstyled">
+                            <li><a class="box-link" href="events.html">Upcoming Events</a></li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to Jojo Charity Organization</h1>
+            <p class="lead">Empowering communities through compassion and action.</p>
+            <a href="#about" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/download.jpeg" alt="About Us" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>Jojo Charity Organization is dedicated to improving lives through education, healthcare, and community empowerment. Our mission is to create lasting impact by supporting those in need and inspiring hope.</p>
+                    <a href="#projects" class="btn btn-outline-primary">Our Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Upcoming Events</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/download.jpeg" class="card-img-top" alt="Event">
+                        <div class="card-body">
+                            <h5 class="card-title">Charity Run</h5>
+                            <p class="card-text">Join us for a 5K charity run to support education for underprivileged children.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/images.jpeg" class="card-img-top" alt="Event">
+                        <div class="card-body">
+                            <h5 class="card-title">Health Camp</h5>
+                            <p class="card-text">Participate in our free health camp offering medical check-ups and treatment.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/download.jpeg" class="card-img-top" alt="Event">
+                        <div class="card-body">
+                            <h5 class="card-title">Fundraising Gala</h5>
+                            <p class="card-text">Support our mission by attending our annual fundraising gala.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Education Initiatives</h3>
+                    <p>We provide scholarships, school supplies, and infrastructure support to ensure every child has access to quality education.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Healthcare Programs</h3>
+                    <p>Our healthcare programs include free medical camps, nutritional support, and clean water projects to improve community health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+   <!-- Footer Section -->
+<footer class="text-center">
+    <div class="container">
+        <!-- Row for Footer Columns -->
+        <div class="row">
+            <!-- Logo and Charity Name Column -->
+            <div class="col-md-4 mb-4">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="assets/images (3).jpeg" alt="Jojo Charity Logo" class="footer-logo">
+                    <h3 class="ms-3">Jojo Charity</h3>
+                </div>
+            </div>
+
+            <!-- Navigation Links Column -->
+            <div class="col-md-4 mb-4">
+                <h5>Navigation</h5>
+                <div class="footer-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Events</a>
+                    <a href="#">Get Involved</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+
+            <!-- Social Icons Column -->
+            <div class="col-md-4 mb-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons text-center">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Notice -->
+        <p class="mt-4" style="font-size: 0.9rem;">&copy; 2024 Jojo Charity. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
